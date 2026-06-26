@@ -96,10 +96,10 @@ jobs:
           #EOF
           
       - name: Build APK splits
-        run: flutter build apk --release --split-per-abi --n0-codesign
+        run: flutter build apk --release --split-per-abi
         
       - name: Build Universal APK
-        run: flutter build apk --release --no-codesign
+        run: flutter build apk --release
         
       - name: Rename APK files
         run: |
